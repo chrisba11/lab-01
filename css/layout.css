@@ -121,3 +121,33 @@
   }
 
 }
+
+@media (min-width: 520px) and (max-width: 767px) {
+  #a {
+    background-color: #00efd7;
+  }
+  
+  #b {
+    background-color: #1be7c5;
+  }
+
+  #c {
+    background-color: #36dfb3;
+  }
+
+  #d {
+    background-color: #52d8a1;
+  }
+
+  #e, #f {
+    background: linear-gradient(#6dd08f, #89c97e);
+  }
+
+  #g, #h {
+    background: linear-gradient(#a4c16c, #c0ba5a);
+  }
+
+  #i {
+    background-color: #f7ab37;
+  }
+}
