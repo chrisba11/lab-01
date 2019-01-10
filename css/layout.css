@@ -1,0 +1,155 @@
+
+#a {
+  height: 15.625vw;
+  line-height: 15.625vw;
+  max-height: 100px;
+  background-color: #00ee00;
+}
+
+#b {
+  height: 31.25vw;
+  line-height: 31.25vw;
+  background-color: #03db1b;
+}
+
+#c {
+  background: #07c836;
+}
+
+#d {
+  background: #0bb651;
+}
+
+#c, #d {
+  height: 26.0416666666667vw;
+  line-height: 26.0416666666667vw;
+}
+
+#e, #f {
+  background: linear-gradient(#0fa36c, #129088);
+}
+
+#g, #h {
+  background: linear-gradient(#167ea3,#1a6bbe);
+}
+
+#e, #f, #g, #h {
+  height: 50vw;
+  line-height: 50vw;
+  width: 50%;
+  float: left;
+}
+
+#i {
+  clear: both;
+  height: 16.6666666666667vw;
+  line-height: 16.6666666666667vw;
+  background-color: #2246f5;
+}
+
+@media (min-width: 768px) {
+
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  section {
+    float: left;
+  }
+
+  #a {
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(to right, #e2eb75, #fc83e4);
+  }
+
+  #b {
+    width: 20.8333333333333%;
+    height: 600px;
+    line-height: 600px;
+    background-color: #e2eb75;
+  }
+
+  #c {
+    background: linear-gradient(to right, #e7d68b, #ecc1a1);
+  }
+
+  #d {
+    background: linear-gradient(to right, #f1acb7, #fc83e4);
+  }
+
+  #c, #d {
+    width: 39.5833333333333%;
+    height: 200px;
+    line-height: 200px;
+  }
+
+  #e {
+    background: none;
+    background-color: #e7d68b;
+  }
+
+  #f {
+    background: none;
+    background-color: #ecc1a1;
+  }
+
+  #g {
+    background: none;
+    background-color: #f1acb7;
+  }
+
+  #h {
+    background: none;
+    background-color: #fc83e4;
+  }
+
+  #e, #f, #g, #h {
+    width: 19.7916666666667%;
+    height: 250px;
+    line-height: 250px;
+  }
+
+  #i {
+    clear: none;
+    width: 79.1666666666667%;
+    height: 150px;
+    line-height: 150px;
+    background-color: none;
+    background: linear-gradient(to right, #e7d68b, #fc83e4);
+  }
+
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+
+  #a {
+    background-color: #00efd7;
+  }
+  
+  #b {
+    background-color: #1be7c5;
+  }
+
+  #c {
+    background-color: #36dfb3;
+  }
+
+  #d {
+    background-color: #52d8a1;
+  }
+
+  #e, #f {
+    background: linear-gradient(#6dd08f, #89c97e);
+  }
+
+  #g, #h {
+    background: linear-gradient(#a4c16c, #c0ba5a);
+  }
+
+  #i {
+    background-color: #f7ab37;
+  }
+  
+}
