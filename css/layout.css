@@ -1,51 +1,51 @@
 
+main {
+  display: grid;
+  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+  grid-template-columns: 50% 50%;
+}
 
 #a {
-  height: 15.625vw;
-  line-height: 15.625vw;
-  max-height: 100px;
+  grid-area: 1 / 1 / 3 / 3;
   background-color: #00ee00;
+  line-height: 75px;
 }
 
 #b {
-  height: 31.25vw;
-  line-height: 31.25vw;
+  grid-area: 2 / 1 / 4 / 3;
   background-color: #03db1b;
+  line-height: 150px;
 }
 
 #c {
+  grid-area: 3 / 1 / 4 / 3;
   background: #07c836;
+  line-height: 125px;
 }
 
 #d {
+  grid-area: 4 / 1 / 5 / 3;
   background: #0bb651;
+  line-height: 125px;
 }
 
 #c, #d {
-  height: 26.0416666666667vw;
-  line-height: 26.0416666666667vw;
 }
 
 #e, #f {
   background: linear-gradient(#0fa36c, #129088);
+  line-height: 250px;
 }
 
 #g, #h {
   background: linear-gradient(#167ea3,#1a6bbe);
-}
-
-#e, #f, #g, #h {
-  height: 50vw;
-  line-height: 50vw;
-  width: 50%;
-  float: left;
+  line-height: 250px;
 }
 
 #i {
-  clear: both;
-  height: 16.6666666666667vw;
-  line-height: 16.6666666666667vw;
+  grid-area: 7 / 1 / 8 / 3;
   background-color: #2246f5;
+  line-height: 80px;
 }
 
 @media (min-width: 768px) {
@@ -55,67 +55,67 @@
     margin: 0 auto;
   }
 
-  section {
-    float: left;
+  main {
+    grid-template-columns: 200px 190px 190px 190px 190px;
+    grid-template-rows: 100px 200px 250px 150px;
   }
 
   #a {
-    height: 100px;
+    grid-area: 1 / 1 / 2 / 6;
     line-height: 100px;
     background: linear-gradient(to right, #e2eb75, #fc83e4);
   }
 
   #b {
-    width: 20.8333333333333%;
-    height: 600px;
+    grid-area: 2/ 1 / 6 / 2;
     line-height: 600px;
     background-color: #e2eb75;
   }
 
   #c {
+    grid-area: 2 / 2 / 3 / 4;
     background: linear-gradient(to right, #e7d68b, #ecc1a1);
   }
 
   #d {
+    grid-area: 2 / 4 / 3 / 6;
     background: linear-gradient(to right, #f1acb7, #fc83e4);
   }
 
   #c, #d {
-    width: 39.5833333333333%;
-    height: 200px;
     line-height: 200px;
   }
 
   #e {
+    grid-area: 3 / 2 / 4 / 3;
     background: none;
     background-color: #e7d68b;
   }
 
   #f {
+    grid-area: 3 / 3 / 4 / 4;
     background: none;
     background-color: #ecc1a1;
   }
 
   #g {
+    grid-area: 3 / 4 / 4 / 5;
     background: none;
     background-color: #f1acb7;
   }
 
   #h {
+    grid-area: 3 / 5 / 4 / 6;
     background: none;
     background-color: #fc83e4;
   }
 
   #e, #f, #g, #h {
-    width: 19.7916666666667%;
-    height: 250px;
     line-height: 250px;
   }
 
   #i {
-    clear: none;
-    width: 79.1666666666667%;
-    height: 150px;
+    grid-area: 4 / 2 / 5 / 6;
     line-height: 150px;
     background-color: none;
     background: linear-gradient(to right, #e7d68b, #fc83e4);
